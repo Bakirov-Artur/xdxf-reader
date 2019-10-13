@@ -1,0 +1,12 @@
+# import xdxf-reader
+# Exapmle
+xdxf = XDXFReader("./dict.xdxf")
+# print(xdxf.keys())
+print(xdxf.search_keys('zop'))
+print(xdxf.search_keys('ops'))
+print('name: %s' % xdxf.full_name)
+print('from: %s' % xdxf.lang_from)
+print('to: %s' % xdxf.lang_to)
+print('dictionary count: %d' % xdxf.count())
+# to get the size of an object, in memory bytes.
+print('memory of bytes: %d' % sys.getsizeof(xdxf.data()))
